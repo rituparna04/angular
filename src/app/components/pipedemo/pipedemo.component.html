@@ -1,0 +1,21 @@
+<h3 style="color: crimson; text-align: center">Pipe Demo</h3>
+
+<div>
+  <input type="text" [(ngModel)] = "message">
+  
+  <div>Your Message: {{ message | lowercase }}</div>
+
+
+  <div>REVERSED Message: {{ message | reversetext }}</div>
+
+  <div>Today is: {{ today | date:'short' }}</div>
+
+  <div>Today is (Another date format): {{ today | date:'d-MMM-yyyy' }}</div>
+
+  <div>The cost is: {{ cost | currency }}</div>
+
+  <div>The cost is (GBP): {{ cost | currency:'GBP' }}</div>
+
+  <div>The cost is (Custom): {{ cost | currency:'\u20b9' }}</div>
+
+</div>

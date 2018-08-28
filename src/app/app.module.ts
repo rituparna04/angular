@@ -7,11 +7,15 @@ import { ActorlistComponent } from './components/actorlist/actorlist.component';
 
 //Service imports
 import { ActorService } from './services/actor.service';
+import { PipedemoComponent } from './components/pipedemo/pipedemo.component';
+import { ReversetextPipe } from './pipes/reversetext.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ActorlistComponent
+    ActorlistComponent,
+    PipedemoComponent,
+    ReversetextPipe
   ],
   imports: [
     BrowserModule,
